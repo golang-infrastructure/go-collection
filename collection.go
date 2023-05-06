@@ -63,4 +63,7 @@ type Collection[T any] interface {
 
 	// ToSlice 将集合转为切片
 	ToSlice() []T
+
+	// Copy 复制集合本身为一个新的集合
+	Copy() Collection[T]
 }
