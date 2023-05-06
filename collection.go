@@ -10,7 +10,7 @@ import (
 type Collection[T any] interface {
 
 	// Equalsable 能够比较两个集合是否相等
-	compare_anything.Equalsable[T]
+	compare_anything.Equalsable[Collection[T]]
 
 	// Iterable 集合都是可迭代的，可以返回一个迭代器来遍历集合
 	iterator.Iterable[T]
