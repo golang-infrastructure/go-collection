@@ -1,6 +1,10 @@
+github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/golang-infrastructure/go-compare-anything v0.0.1 h1:y5pGnHgp8gD5jqUmaEwv/zqgxYB0z5iJf/fJUg7Akpo=
 github.com/golang-infrastructure/go-compare-anything v0.0.1/go.mod h1:CtyKakUDiX9wgDm6OXrN9K9NnBa6GuwG880fexW9YMs=
 github.com/golang-infrastructure/go-gtypes v0.0.1 h1:hnM1OYSwLPLGkZ4C6ecAxgmAUaPTjnhnUtRNmJj4p6c=
 github.com/golang-infrastructure/go-gtypes v0.0.1/go.mod h1:vFMCxFzxdMInvTtgLZRlWI1rS+mui88sMbL5I+zu1hg=
 github.com/golang-infrastructure/go-iterator v0.0.0-20230112065131-1d82695f2289 h1:BYyz5BZuXOYSfEGyJKjMQKPsfEYazKixHFpyLOE/+3k=
 github.com/golang-infrastructure/go-iterator v0.0.0-20230112065131-1d82695f2289/go.mod h1:Guf14ZZ7f7qiE0YpZbUkICcm7LWc3nrn3/gDObT//WI=
+github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
+github.com/stretchr/testify v1.8.1 h1:w7B6lhMri9wdJUVmEZPGGhZzrYTPvgJArz7wNPgYKsk=
+gopkg.in/yaml.v3 v3.0.1 h1:fxVm/GzAzEWqLHuvctI91KS9hhNmmWOoWu0XTYJS7CA=
