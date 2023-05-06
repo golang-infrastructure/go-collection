@@ -42,6 +42,7 @@ type Collection[T any] interface {
 
 	// IsEmpty 判断集合是否为空
 	IsEmpty() bool
+	IsNotEmpty() bool
 
 	// Remove 从集合中移除给定元素
 	Remove(value T)
