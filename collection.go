@@ -51,13 +51,13 @@ type Collection[T any] interface {
 	RemoveAll(value []T)
 
 	// RetainAll 当前集合减去其它集合，求差集
-	RetainAll(collection Collection[T])
+	RetainAll(other Collection[T])
 
 	// Union 返回两个集合的并集
-	Union(collection Collection[T]) Collection[T]
+	Union(other Collection[T]) Collection[T]
 
 	// Intersection 返回两个集合的交集
-	Intersection(collection Collection[T]) Collection[T]
+	Intersection(other Collection[T]) Collection[T]
 
 	// Size 返回集合的大小，如果集合为空则返回0
 	Size() int
