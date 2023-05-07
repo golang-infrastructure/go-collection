@@ -49,15 +49,18 @@ type Collection[T any] interface {
 
 	// RemoveAll 从集合中移除给定的一批元素
 	RemoveAll(value []T)
+	RemoveAllByKeyFunc(value []T, keyFunc func(value T) string)
 
-	// RetainAll 当前集合减去其它集合，求差集
+	// RetainAll 当前集合只保留给定的元素，其它元素移除掉
 	RetainAll(other Collection[T])
+	RetainAllByKeyFunc(other Collection[T], keyFunc func(value T) string)
 
 	// Union 返回两个集合的并集
 	Union(other Collection[T]) Collection[T]
 
 	// Intersection 返回两个集合的交集
 	Intersection(other Collection[T]) Collection[T]
+	IntersectionByKeyFunc(other Collection[T], keyFunc func(value T) string) Collection[T]
 
 	// Size 返回集合的大小，如果集合为空则返回0
 	Size() int
@@ -70,5 +73,4 @@ type Collection[T any] interface {
 
 	// ForEach 遍历集合中的每一个元素
 	ForEach(eachFunc func(i int, element T))
-
 }
