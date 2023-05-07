@@ -37,6 +37,7 @@ type Collection[T any] interface {
 
 	// ContainsAny 判断集合是否包含给定的一批元素中的任意一个
 	ContainsAny(value []T) bool
+	ContainsAnyByKeyFunc(value []T, keyFunc func(value T)) bool
 
 	// String 集合转为字符串，注意这个方法不一定是可逆的，通常只是为了把集合打印日志之类的
 	String() string
