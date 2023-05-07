@@ -33,6 +33,7 @@ type Collection[T any] interface {
 
 	// ContainsAll 判断集合是否包含全部给定的元素
 	ContainsAll(values []T) bool
+	ContainsAllByKeyFunc(values []T, keyFunc func(value T) string) bool
 
 	// ContainsAny 判断集合是否包含给定的一批元素中的任意一个
 	ContainsAny(value []T) bool
