@@ -67,4 +67,8 @@ type Collection[T any] interface {
 
 	// Copy 复制集合本身为一个新的集合
 	Copy() Collection[T]
+
+	// ForEach 遍历集合中的每一个元素
+	ForEach(eachFunc func(i int, element T))
+
 }
